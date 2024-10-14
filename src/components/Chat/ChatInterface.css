@@ -1,0 +1,55 @@
+.App {
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Align sidebar and content in a row */
+  margin-top: 50px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  color: black;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  font-size: medium;
+}
+
+.chat-display {
+  flex-grow: 1; /* Take up remaining space after sidebar */
+  height: 100vh; 
+  overflow-y: scroll;
+  background: white;
+  color: black;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-left: 0; /* Remove any left margin */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+
+.user-message {
+  color: blue;
+}
+
+.bot-message {
+  color: green;
+}
